@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" type="text/css" href="./estilo.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img id="profile-img" src="./imagens/icone.png" alt="Ícone Padrão">
+      <input type="file" id="profile-input" accept="image/*" onchange="changeProfileImage(event)">
+      <h2>Tiago Oliveira</h2>
+      <p>Esta é minha lista de tarefas que criei para o desafio HTML/CSS da Aceleradora Ágil</p>
+      <ul>
+        <li><a href="https://github.com/TiagOliveira1987" target="_blank"><img src="./imagens/github.png" alt="GitHub"></a></li>
+        <li><a href="https://www.linkedin.com/in/tiago-oliveira-8486abba?" target="_blank"> <img src="./imagens/lkdn.png" alt="Linkedin"></a></li>
+        <li><a href="tiagoclaro1987@gmail.com" target="_blank"> <img src="./imagens/gmail.png" alt="Gmail"></a></li>
+        <li><a href="wa.link/5hcml7" target="_blank"> <img src="./imagens/whats.webp" alt="Whatsapp"></a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <h1>Lista de Tarefas</h1>
+      <div class="task-lists">
+        <div class="day-tasks">
+          <h2>Dia</h2>
+          <ol id="day-task-list"></ol>
+          <div class="add-task">
+            <input type="text" id="day-task-input" placeholder="Adicionar tarefa">
+            <button onclick="addTask('day')">Adicionar</button>
+          </div>
+        </div>
+        <div class="night-tasks">
+          <h2>Noite</h2>
+          <ol id="night-task-list"></ol>
+          <div class="add-task">
+            <input type="text" id="night-task-input" placeholder="Adicionar tarefa">
+            <button onclick="addTask('night')">Adicionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
